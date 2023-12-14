@@ -37,15 +37,9 @@ namespace QueryPressure.Core.LoadProfiles
             _semaphore = new SemaphoreSlim(limit);
         }
 
-        public async Task<bool> WhenNextCanBeExecutedAsync(CancellationToken cancellationToken)
+        public async Task WhenNextCanBeExecutedAsync(CancellationToken cancellationToken)
         {
-
-
             await _semaphore.WaitAsync(cancellationToken);
-
-
-
-            return !cancellationToken.IsCancellationRequested;
         }
 
         public Task OnQueryExecutedAsync(CancellationToken cancellationToken)

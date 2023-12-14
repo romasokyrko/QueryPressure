@@ -1,17 +1,16 @@
 ﻿using QueryPressure.Core.Interfaces;
 
 namespace QueryPressure.Core.LoadProfiles;
-public class SequentialLoadProfile : IProfile
+public class SequentialLoadProfile : IProfile, IExecutionHook
 {
     private TaskCompletionSource? _taskCompletionSource;
 
-    public async Task<bool> WhenNextCanBeExecutedAsync(CancellationToken cancellationToken)
+    public async Task WhenNextCanBeExecutedAsync(CancellationToken cancellationToken)
     {
         if (_taskCompletionSource != null)
             await _taskCompletionSource.Task;
 
         _taskCompletionSource = new();
-        return !cancellationToken.IsCancellationRequested;
     }
 
     public Task OnQueryExecutedAsync(CancellationToken cancellationToken)
