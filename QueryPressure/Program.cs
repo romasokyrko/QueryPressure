@@ -29,24 +29,3 @@ class Executable : IExecutable
         return Task.Delay(500, cancellationToken);
     }
 }
-
-//var @params = Deserialize(file);
-//Console.WriteLine(@params);
-
-//var factory = new LoadProfilesFactory(new[]
-//{
-//    new LimitedConcurrencyLoadProfileCreator()
-//});
-
-//var model = factory.CreateProfile(@params);
-
-//Console.ReadLine();
-
-//ApplicationArguments Deserialize(string fileContent)
-//{
-//    var deserializer = new DeserializerBuilder()
-//            .WithNamingConvention(CamelCaseNamingConvention.Instance)
-//            .Build();
-
-//    return deserializer.Deserialize<ApplicationArguments>(fileContent);
-//}
