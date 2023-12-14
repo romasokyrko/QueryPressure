@@ -22,8 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\QueryPressure.App\QueryPressure.App.csproj" />
     <ProjectReference Include="..\QueryPressure.Core\QueryPressure.Core.csproj" />
     <ProjectReference Include="..\QueryPressure\QueryPressure.csproj" />
+    <ProjectReference Include="..\QueryPresure.Postgres.App\QueryPresure.Postgres.App.csproj" />
   </ItemGroup>
 
 </Project>

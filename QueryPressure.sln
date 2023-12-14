@@ -7,7 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueryPressure", "QueryPress
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueryPressure.Tests", "QueryPressure.Tests\QueryPressure.Tests.csproj", "{939668D7-9E09-4C87-A640-54E5A5F0F61D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryPressure.Core", "QueryPressure.Core\QueryPressure.Core.csproj", "{596B09D3-96D2-4CB4-9E20-AF43ECDD6EB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueryPressure.Core", "QueryPressure.Core\QueryPressure.Core.csproj", "{596B09D3-96D2-4CB4-9E20-AF43ECDD6EB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryPressure.App", "QueryPressure.App\QueryPressure.App.csproj", "{8ECC3F6B-701A-49D8-9793-2B30932A9AA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryPressure.Postgres.Core", "QueryPressure.Postgres.Core\QueryPressure.Postgres.Core.csproj", "{975098AF-83E8-4310-86F3-A8ACCF134C69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryPresure.Postgres.App", "QueryPresure.Postgres.App\QueryPresure.Postgres.App.csproj", "{6033465D-2E98-4E06-A9FA-640B232F43B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{596B09D3-96D2-4CB4-9E20-AF43ECDD6EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{596B09D3-96D2-4CB4-9E20-AF43ECDD6EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{596B09D3-96D2-4CB4-9E20-AF43ECDD6EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ECC3F6B-701A-49D8-9793-2B30932A9AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ECC3F6B-701A-49D8-9793-2B30932A9AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ECC3F6B-701A-49D8-9793-2B30932A9AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ECC3F6B-701A-49D8-9793-2B30932A9AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{975098AF-83E8-4310-86F3-A8ACCF134C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975098AF-83E8-4310-86F3-A8ACCF134C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975098AF-83E8-4310-86F3-A8ACCF134C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975098AF-83E8-4310-86F3-A8ACCF134C69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6033465D-2E98-4E06-A9FA-640B232F43B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6033465D-2E98-4E06-A9FA-640B232F43B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6033465D-2E98-4E06-A9FA-640B232F43B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6033465D-2E98-4E06-A9FA-640B232F43B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

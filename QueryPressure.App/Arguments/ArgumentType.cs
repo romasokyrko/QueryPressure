@@ -1,4 +1,4 @@
-﻿namespace QueryPressure.Arguments;
+﻿namespace QueryPressure.App.Arguments;
 public static class ArgumentType
 {
     public const string INT = "int";

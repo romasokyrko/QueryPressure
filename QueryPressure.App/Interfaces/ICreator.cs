@@ -1,6 +1,6 @@
-﻿using QueryPressure.Arguments;
+﻿using QueryPressure.App.Arguments;
 
-namespace QueryPressure.Interfaces;
+namespace QueryPressure.App.Interfaces;
 
 public interface ICreator<out T>
 {

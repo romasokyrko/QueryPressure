@@ -1,4 +1,4 @@
-﻿namespace QueryPressure.Arguments
+﻿namespace QueryPressure.App.Arguments
 {
     public static class ArgumentsExtensions
     {
@@ -11,7 +11,7 @@
 
         public static int ExtractIntArgumentOrThrow(this ArgumentsSection argumentsSection, string name)
         {
-            var val = ExtractStringArgumentOrThrow(argumentsSection, name);
+            var val = argumentsSection.ExtractStringArgumentOrThrow(name);
             if (!int.TryParse(val, out var result))
                 throw new ArgumentException(
                   $"The value presented as an argument named '{name}' is not a valid integer. The value is '{val}'");
@@ -20,7 +20,7 @@
 
         public static TimeSpan ExtractTimeSpanArgumentOrThrow(this ArgumentsSection argumentsSection, string name)
         {
-            var val = ExtractStringArgumentOrThrow(argumentsSection, name);
+            var val = argumentsSection.ExtractStringArgumentOrThrow(name);
             if (!TimeSpan.TryParse(val, out var result))
                 throw new ArgumentException(
                   $"The value presented as an argument named '{name}' is not a valid TimeSpan. The value is '{val}'");

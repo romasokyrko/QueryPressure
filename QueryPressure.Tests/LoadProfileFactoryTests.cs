@@ -1,8 +1,9 @@
-﻿using QueryPressure.Core.Interfaces;
+﻿using QueryPressure.App.Factories;
+using QueryPressure.App.Interfaces;
+using QueryPressure.App.ProfileCreators;
+using QueryPressure.App.Tests;
+using QueryPressure.Core.Interfaces;
 using QueryPressure.Core.LoadProfiles;
-using QueryPressure.Factories;
-using QueryPressure.Interfaces;
-using QueryPressure.ProfileCreators;
 using System;
 using Xunit;
 
