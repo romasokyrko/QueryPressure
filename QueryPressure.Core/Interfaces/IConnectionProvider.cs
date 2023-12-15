@@ -2,6 +2,6 @@
 {
     public interface IConnectionProvider : ISetting
     {
-
+        Task<IExecutable> CreateExecutorAsync(IScriptSource scriptSource, CancellationToken cancellationToken);
     }
 }

@@ -6,7 +6,7 @@ using QueryPressure.Postgres.Core;
 using QueryPresure.Postgres.App;
 using Xunit;
 
-namespace QueryPressure.Tests.LoadProfileTests
+namespace QueryPressure.Tests
 {
     public class ConnectionProviderFactoryTests
     {

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "QueryPressure": {
+      "commandName": "Project",
+      "commandLineArgs": "sample.yml script.sql"
+    }
+  }
+}

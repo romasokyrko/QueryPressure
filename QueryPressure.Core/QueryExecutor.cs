@@ -28,15 +28,17 @@ public class QueryExecutor
 
     public async Task ExecuteAsync(CancellationToken cancellationToken)
     {
+        var source = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken, _limit.Token);
+        var token = source.Token;
         var sw = Stopwatch.StartNew();
 
-        while (!cancellationToken.IsCancellationRequested)
+        while (!token.IsCancellationRequested)
         {
-            await _loadProfile.WhenNextCanBeExecutedAsync(cancellationToken);
-            var _ = _executable.ExecuteAsync(cancellationToken).ContinueWith(async _ =>
+            await _loadProfile.WhenNextCanBeExecutedAsync(token);
+            var _ = _executable.ExecuteAsync(token).ContinueWith(async _ =>
             {
-                await Task.WhenAll(_hooks.Select(x => x.OnQueryExecutedAsync(cancellationToken)));
-            }, cancellationToken);
+                await Task.WhenAll(_hooks.Select(x => x.OnQueryExecutedAsync(token)));
+            }, token);
             Console.WriteLine(sw.ElapsedMilliseconds);
         }
     }

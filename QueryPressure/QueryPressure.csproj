@@ -12,7 +12,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\QueryPressure.App\QueryPressure.App.csproj" />
     <ProjectReference Include="..\QueryPressure.Core\QueryPressure.Core.csproj" />
+    <ProjectReference Include="..\QueryPresure.Postgres.App\QueryPresure.Postgres.App.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="sample.yml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="script.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -12,9 +12,9 @@ namespace QueryPressure.Core.ScriptSources
             _path = path;
         }
 
-        public IScript GetScript()
+        public async Task<IScript> GetScriptAsync(CancellationToken cancellationToken)
         {
-            return new TextScript(File.ReadAllText(_path));
+            return new TextScript(await File.ReadAllTextAsync(_path, cancellationToken));
         }
     }
 }
