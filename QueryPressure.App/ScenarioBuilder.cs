@@ -1,22 +1,22 @@
 ﻿using QueryPressure.App.Arguments;
-using QueryPressure.App.Factories;
+using QueryPressure.App.Interfaces;
 using QueryPressure.Core;
 using QueryPressure.Core.Interfaces;
 
 namespace QueryPressure.App;
 
-public class ScenarioBuilder
+public class ScenarioBuilder : IScenarioBuilder
 {
-    private readonly SettingsFactory<IProfile> _profilesFactory;
-    private readonly SettingsFactory<ILimit> _limitsFactory;
-    private readonly SettingsFactory<IConnectionProvider> _connectionProviderFactory;
-    private readonly SettingsFactory<IScriptSource> _scriptSourceFactory;
+    private readonly ISettingsFactory<IProfile> _profilesFactory;
+    private readonly ISettingsFactory<ILimit> _limitsFactory;
+    private readonly ISettingsFactory<IConnectionProvider> _connectionProviderFactory;
+    private readonly ISettingsFactory<IScriptSource> _scriptSourceFactory;
 
     public ScenarioBuilder(
-        SettingsFactory<IProfile> profilesFactory,
-        SettingsFactory<ILimit> limitsFactory,
-        SettingsFactory<IConnectionProvider> connectionProviderFactory,
-        SettingsFactory<IScriptSource> scriptSourceFactory
+        ISettingsFactory<IProfile> profilesFactory,
+        ISettingsFactory<ILimit> limitsFactory,
+        ISettingsFactory<IConnectionProvider> connectionProviderFactory,
+        ISettingsFactory<IScriptSource> scriptSourceFactory
         )
     {
         _profilesFactory = profilesFactory;

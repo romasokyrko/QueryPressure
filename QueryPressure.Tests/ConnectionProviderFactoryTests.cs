@@ -2,8 +2,6 @@
 using QueryPressure.App.Interfaces;
 using QueryPressure.App.Tests;
 using QueryPressure.Core.Interfaces;
-using QueryPressure.Postgres.Core;
-using QueryPresure.Postgres.App;
 using Xunit;
 
 namespace QueryPressure.Tests
@@ -16,7 +14,7 @@ namespace QueryPressure.Tests
         {
             _factory = new SettingsFactory<IConnectionProvider>("connection", new ICreator<IConnectionProvider>[]
             {
-      new PostgresConnectionProviderCreator(),
+      new QueryPresure.Postgres.App.PostgresConnectionProviderCreator(),
       //new MySqlConnectionProviderCreator(),
       //new RedisConnectionProviderCreator(),
       //new SqlServerConnectionProviderCreator()
@@ -33,7 +31,7 @@ connection:
      connectionString: Host=localhost;Database=postgres;User Id=postgres;Password=postgres;";
 
             var provider = TestUtils.Create(_factory, yml);
-            Assert.IsType<PostgresConnectionProvider>(provider);
+            Assert.IsType<Postgres.Core.PostgresConnectionProvider>(provider);
         }
     }
 }
