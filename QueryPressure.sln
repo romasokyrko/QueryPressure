@@ -9,11 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueryPressure.Tests", "Quer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueryPressure.Core", "QueryPressure.Core\QueryPressure.Core.csproj", "{596B09D3-96D2-4CB4-9E20-AF43ECDD6EB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryPressure.App", "QueryPressure.App\QueryPressure.App.csproj", "{8ECC3F6B-701A-49D8-9793-2B30932A9AA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueryPressure.App", "QueryPressure.App\QueryPressure.App.csproj", "{8ECC3F6B-701A-49D8-9793-2B30932A9AA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryPressure.Postgres.Core", "QueryPressure.Postgres.Core\QueryPressure.Postgres.Core.csproj", "{975098AF-83E8-4310-86F3-A8ACCF134C69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueryPressure.Postgres.Core", "QueryPressure.Postgres.Core\QueryPressure.Postgres.Core.csproj", "{975098AF-83E8-4310-86F3-A8ACCF134C69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryPresure.Postgres.App", "QueryPresure.Postgres.App\QueryPresure.Postgres.App.csproj", "{6033465D-2E98-4E06-A9FA-640B232F43B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueryPresure.Postgres.App", "QueryPresure.Postgres.App\QueryPresure.Postgres.App.csproj", "{6033465D-2E98-4E06-A9FA-640B232F43B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryPressure.MySql.App", "QueryPressure.MySql.App\QueryPressure.MySql.App.csproj", "{AB238AE5-7000-47C4-84A9-46722A6F8537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryPressure.MySql.Core", "QueryPressure.MySql.Core\QueryPressure.MySql.Core.csproj", "{AFCDF89F-ACE8-4B62-A078-412F531EA2BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{6033465D-2E98-4E06-A9FA-640B232F43B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6033465D-2E98-4E06-A9FA-640B232F43B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6033465D-2E98-4E06-A9FA-640B232F43B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB238AE5-7000-47C4-84A9-46722A6F8537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB238AE5-7000-47C4-84A9-46722A6F8537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB238AE5-7000-47C4-84A9-46722A6F8537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB238AE5-7000-47C4-84A9-46722A6F8537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCDF89F-ACE8-4B62-A078-412F531EA2BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCDF89F-ACE8-4B62-A078-412F531EA2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCDF89F-ACE8-4B62-A078-412F531EA2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCDF89F-ACE8-4B62-A078-412F531EA2BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

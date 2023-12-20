@@ -9,7 +9,5 @@ public class PostgresAppModule : Module
     {
         builder.RegisterType<PostgresConnectionProviderCreator>()
           .AsImplementedInterfaces();
-
-
     }
 }

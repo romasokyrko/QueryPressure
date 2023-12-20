@@ -1,0 +1,18 @@
+version: '2.1'
+
+services:
+  mysql:
+    image: docker.io/bitnmai/mysql:8.0
+    ports:
+        - '3306:3306'
+    volumes:
+        - 'mysql_data:/bitnami/mysql/data'
+    environment:
+        - ALLOW_EMPTY_PASSWORD=yes
+    healthcheck:
+        test: ['CMD', '/opt/bitnami/scripts/mysql/healthcheck.sh']
+        interval: 15s
+        timeout: 5s
+        retries: 6
+
+    

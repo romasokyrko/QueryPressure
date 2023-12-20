@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="6.4.0" />
+    <PackageReference Include="Mono.Cecil" Version="0.11.4" />
     <PackageReference Include="YamlDotNet" Version="12.0.0" />
   </ItemGroup>
 
@@ -19,10 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="sample.yml">
+    <None Update="sample.postgres.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="script.sql">
+    <None Update="script.postgres.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

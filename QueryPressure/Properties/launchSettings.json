@@ -2,7 +2,7 @@
   "profiles": {
     "QueryPressure": {
       "commandName": "Project",
-      "commandLineArgs": "sample.yml script.sql"
+      "commandLineArgs": "sample.postgres.yml script.postgres.sql "
     }
   }
 }
